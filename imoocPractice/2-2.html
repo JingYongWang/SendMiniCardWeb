@@ -100,6 +100,8 @@
         $('button').click(function() {
             // 在5秒的时间内，移动X的位置，为2个页面单位
         element.css({
+            //根據時間的進行去改變屬性值的變化速率 linear為其中一種
+            //规定相同速度開始相同速度結束。
             'transition-timing-function': 'linear',
             'transition-duration': '5000ms',
             'transform': 'translate3d(-' + (width * 2) + 'px,0px,0px)'
